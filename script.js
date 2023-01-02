@@ -93,7 +93,9 @@ class Calculator {
     // }
 
     delete() {
-      this.currentOperand = this.currentOperand.toFixed().slice(0, -1);
+      this.currentOperand = this.currentOperand.toString().slice(0, -1);
+      this.updateDisplay();
+      console.log("deleted")
     }
   
     displayError(message) {
@@ -288,11 +290,14 @@ class Calculator {
       updateOutputColor();
     });
   
+    console.log('Delete button element:', deleteButton);
+
     deleteButton.addEventListener('click', () => {
       calculator.delete();
       calculator.updateDisplay();
       isCalculatorActive = true; 
       updateOutputColor();
+      console.log('Delete button clicked');
     });
   });
   

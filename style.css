@@ -20,7 +20,7 @@ body {
     width: 100%;
     padding: 2rem;
 }
-.text-content {
+.display-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,11 +28,11 @@ body {
     margin: 2rem;
     line-height: 1rem;
 }
-.text-content h1 {
+.display-content h1 {
     font-weight: bolder;
     align-self: center;
 }
-.text-content p {
+.diplay-content p {
     font-size: 1rem;
 }
 .container {
@@ -70,6 +70,7 @@ body {
     grid-column: span 2;
 }
 .output {
+    height: 7rem;
     position: relative;
     grid-column: 1 / -1;
     background-color: rgba(61, 65, 61, 0.75);
@@ -110,6 +111,21 @@ button.equal {
 }
 .hidden {
     display: none;
+}
+
+@media (max-width: 640px) {
+    .calculator-grid {
+        max-width: 28rem;
+        height: 35rem;
+        grid-template-columns: repeat(4, 80px);
+        grid-template-rows: minmax(100px, auto) repeat(5, 90px);
+    }
+    .calculator-grid > button {
+        font-size: 1.5rem;
+    }
+    .output {
+        height: 5rem;
+    }
 }
 
   
