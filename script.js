@@ -103,9 +103,6 @@ class Calculator {
         this.errorTextElement.classList.remove('hidden');
         this.currentOperandTextElement.classList.add('hidden');
         this.previousOperandTextElement.classList.add('hidden');
-        // this.errorTextElement.hidden = false;
-        // this.currentOperandTextElement.hidden = true;
-        // this.previousOperandTextElement.hidden = true;
         if (!this.isErrorDisplayed) {
           this.currentOperandTextElement.classList.remove('hidden');
           this.previousOperandTextElement.classList.remove('hidden');
