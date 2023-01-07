@@ -271,13 +271,6 @@ class Calculator {
         updateOutputColor();
       });
     });
-  
-    // percentageButton.addEventListener('click', () => {
-    //     calculator.computePercentage();
-    //     calculator.updateDisplay();
-    //     isCalculatorActive = true; 
-    //     updateOutputColor();
-    //   });
 
     equalsButton.addEventListener('click', () => {
       calculator.compute();
