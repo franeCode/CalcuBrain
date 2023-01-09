@@ -209,7 +209,6 @@ class Calculator {
             calculator.appendNumber('.');
             break;
           default:
-            // Ignore other keys
             break;
         }
       
