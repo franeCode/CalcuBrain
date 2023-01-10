@@ -77,20 +77,7 @@ class Calculator {
         this.updateDisplay();
         console.log(computation)
       }
-      
-    //   computePercentage() {
-    //     const current = parseFloat(this.currentOperand);
-      
-    //     if (isNaN(current)) {
-    //       this.displayError('Invalid input');
-    //       this.updateDisplay();
-    //       return;
-    //     }
-      
-    //     this.currentOperand = (current / 100).toFixed(2);
-    //     this.operation = undefined;
-    //     this.previousOperand = '';
-    // }
+
 
     delete() {
       this.currentOperand = this.currentOperand.toString().slice(0, -1);
