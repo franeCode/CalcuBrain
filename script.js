@@ -78,7 +78,6 @@ class Calculator {
         console.log(computation)
       }
 
-
     delete() {
       this.currentOperand = this.currentOperand.toString().slice(0, -1);
       this.updateDisplay();
