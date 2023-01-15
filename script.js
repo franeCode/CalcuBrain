@@ -1,3 +1,5 @@
+//TODO: Make keyboard operand trigger the color changing
+
 class Calculator {
   constructor(
     previousOperandTextElement,
