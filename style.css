@@ -118,14 +118,20 @@ button.equal {
 @media (max-width: 640px) {
   .calculator-grid {
     max-width: 28rem;
-    height: 35rem;
-    grid-template-columns: repeat(4, 80px);
-    grid-template-rows: minmax(100px, auto) repeat(5, 90px);
+    height: 37rem;
+    grid-template-columns: repeat(4, 105px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 90px);
   }
   .calculator-grid > button {
     font-size: 1.5rem;
   }
   .output {
-    height: 5rem;
+    /* height: 5rem; */
+  }
+  .output .previous-operand {
+    font-size: 1rem;
+  }
+  .output .current-operand {
+    font-size: 2rem;
   }
 }
