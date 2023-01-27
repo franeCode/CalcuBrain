@@ -115,7 +115,7 @@ button.equal {
   display: none;
 }
 
-@media (max-width: 640px) {
+@media screen and (max-width: 576px) {
   .calculator-grid {
     max-width: 28rem;
     height: 37rem;
@@ -133,5 +133,27 @@ button.equal {
   }
   .output .current-operand {
     font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 481px) {
+  .calculator-grid {
+    max-width: 20rem;
+    height: 28rem;
+    grid-template-columns: repeat(4, 75px);
+    grid-template-rows: minmax(80px, auto) repeat(5, 70px);
+  }
+  .calculator-grid > button {
+    font-size: 1rem;
+  }
+  .output {
+    height: 5rem;
+    border-width: 0.6rem;
+  }
+  .output .previous-operand {
+    font-size: 0.8rem;
+  }
+  .output .current-operand {
+    font-size: 1.5rem;
   }
 }
