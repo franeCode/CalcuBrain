@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Poppins:wght@200&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right, #ede5e5, #734040);
+    height: 100%;
+}
+.calculator {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    width: 100%;
+    padding: 2rem;
+}
+.text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    line-height: 1rem;
+}
+.text-content h1 {
+    font-weight: bolder;
+    align-self: center;
+}
+.text-content p {
+    font-size: 1rem;
+}
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calculator-grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    width: 32rem;
+    height:40rem;
+    background-color: rgb(28, 26, 26);
+    border: 1rem solid rgb(28, 26, 26);
+    border-radius: 1rem;
+    grid-template-columns: repeat(4, 120px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+.calculator-grid > button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 0.3rem solid rgb(28, 26, 26);
+    outline: none;
+    background-color: rgba(59, 57, 57, 0.75);
+    color: #fff;
+}
+.calculator-grid > button:hover {
+    transition: 0.3s ease-in-out;
+    background-color: rgba(255, 255, 255, .9);
+    color: #000;
+}
+.span-two {
+    grid-column: span 2;
+}
+.output {
+    position: relative;
+    grid-column: 1 / -1;
+    background-color: rgba(61, 65, 61, 0.75);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding-right: 1.5rem;
+    word-wrap: break-word;
+    word-break: break-all;
+    border: 1rem solid rgba(59, 57, 57, 0.75);
+    border-radius: 1rem;
+    animation: borderTransition 3s linear infinite;
+}
+.output.output-active {
+    background-color: rgba(79, 97, 79, 0.75);
+}
+.output.output-previous {
+    background-color: rgba(61, 65, 61, 0.75);
+}
+.output .previous-operand {
+    font-family: 'Orbitron', sans-serif;
+    color: rgba(255, 255, 255, .75);
+    font-size: 1.5rem;
+}
+.output .current-operand {
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    font-size: 2.5rem;
+}
+.output .error {
+    font-family: 'Orbitron', sans-serif;
+    color: red;
+    font-size: 1rem;
+}
+button.equal {
+    background-color: rgba(248, 141, 10, 0.75);
+}
+.hidden {
+    display: none;
+}
+
+  
