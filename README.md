@@ -1,4 +1,4 @@
-# CalcuBrain - Simple Calculator with Keyboard Features
+# CalcuBrain
 
 CalcuBrain is a basic calculator application that includes keyboard input functionality. This project was developed using Object-Oriented Programming (OOP) principles and served as an excellent learning experience.
 
