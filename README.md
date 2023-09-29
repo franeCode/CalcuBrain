@@ -19,7 +19,7 @@ CalcuBrain is a basic calculator application that includes keyboard input functi
 
 To run CalcuBrain on your local machine, click here:
 
-# Usage
+## Usage
 
 - Use the on-screen buttons or your keyboard to input numbers and perform calculations.
 - Enjoy a simple and user-friendly calculator experience!
