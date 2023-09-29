@@ -17,7 +17,7 @@ CalcuBrain is a basic calculator application that includes keyboard input functi
 
 ## Getting Started
 
-To run CalcuBrain on your local machine, click here:
+To run CalcuBrain on your local machine, click [here](https://jade-banoffee-854ba3.netlify.app/)
 
 ## Usage
 
